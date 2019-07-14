@@ -1,0 +1,27 @@
+body {
+    color: black;
+    background-color: silver;
+}
+
+.h2 {
+    text-align: center;
+}
+
+.row {
+    align-items: center;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    color: silver;
+    text-align: center;
+    background-color: black;
+    vertical-align: text-bottom;
+}
+
+.navbar {
+    background-color: black;
+    color: silver;
+}

@@ -1,58 +1,287 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Welcome</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Tali Ngatuvai's portfolio</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <!-- External Css -->
-    <link rel="stylesheet" href="./assets/css/landing.css">
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js"
+        integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css"
+        integrity="sha384-2hfp1SzUoho7/TsGGGDaFdsuuDL0LX2hnUp6VkX3CUQ2K4K+xjboZdsXyp4oUHZj" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <!-- Theme CSS -->
+    <link rel="stylesheet" type="text.css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+
 </head>
 
 <body>
-    <div class="nav-container container">
-        <div class="grid-container">
-            <div class=" items item1">
-                <a href="http://" class=" subItem subItem1">About</a>  
+
+    <div class="container">
+        <nav class="navbar navbar-expand-sm">
+            <a class="navbar-brand" href="#">Tali Ngatuvai</a>
+              <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+              </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" id="reviews" href="reviews.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="developers" href="developers.html">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="developers" href="developers.html">Contact Me</a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="intro-text">
+                
+                            <img class="img-responsive" src="img/mugur cv.jpg" height="100" width="200" alt="">
+                            <br>
+                            <span class="skills"><i class="fa fa-graduation-cap" id="graduation"
+                                    aria-hidden="true"></i>FULLSTACK STUDENT</span>
+                            <br><br>
+                            <span class="skills"><i class="fa fa-code" id="graduation" aria-hidden="true"></i>&nbspHTML
+                                /
+                                CSS / BOOTSTRAP / JAVASCRIPT </span>
+                            <br><br>
+                            <!-- <span class="skills"><i class="fa fa-file-word-o" id="graduation"  aria-hidden="true"></i> &nbsp MS Word / MS PowerPoint / MS Excel</span>
+                        <br><br> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- About Section -->
+        <section class="success" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>About me</h2>
+                        <hr class="star-light">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-lg-offset-2" align="justify">
+                        <p><i class="fa fa-user fa-lg" id="graduation" aria-hidden="true"></i>&nbsp<u>Personal</u></p>
+                        <p>I am currently a student attending the U of U's Boot Camp with a passion to learn how to
+                            code.
+                        </p>
+                        <hr class="simplehr">
+                        <p> My goal is to increase my current skills and develop personally and professionally to become
+                            a
+                            software developer. </p>
+                        <hr class="simplehr">
+                        <p>I love a challenge where I can use my technical and personal skills to adapt myself to learn
+                            new
+                            technologies.</p>
+                    </div>
+                    <div class="col-lg-4" align="justify">
+                        <p><i class="fa fa-check-square-o fa-lg" id="graduation"
+                                aria-hidden="true"></i>&nbsp<u>Skills</u>
+                        </p>
+                        <p><i class="fa fa-check"></i> HTML | CSS | Bootstrap | jQuery | ajax | </p>
+                        <br><br><br><br><br><br>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <!-- Portfolio Grid Section -->
+        <section class="portfolio" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 id="port">Portfolio</h2>
+                        <hr class="star-primary">
+                    </div>
+                </div>
+                <!--added columns for alternative images with different zoom means-->
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card card-block" id="cardbackground">
+                            <h3 class="card-title">1st HTML Project</h3>
+                            <p class="card-text">In this assignment, you will build a web design skeleton using HTML/CSS
+                            </p>
+                            <img src="assets/images/HTML Project.png" class="img-fluid" alt="projects"><br />
+                            <a href="https://tngatuvai.github.io/HW-Wireframe/" target="_blank" class="btn btn-info">See
+                                website</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card card-block" id="cardbackground">
+                            <h3 class="card-title">Bootstrap Portfolio</h3>
+                            <p class="card-text">The first will be building your portfolio layout using the Bootstrap
+                                CSS
+                                Framework</p>
+                            <img src="assets/images/Bootstrap Portfolio .png" class="img-fluid" alt="projects"><br />
+                            <a href=" https://tngatuvai.github.io/Bootstrap-Portfolio/" class="btn btn-info">See
+                                website</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card card-block" id="cardbackground">
+                            <h3 class="card-title">Psychic-Game</h3>
+                            <p class="card-text">In this assignment, you'll create one of two possible computer games:
+                                Word
+                                Guess or Psychic.</p>
+                            <img src="assets/images/Psychic-Game.png" class="img-fluid" alt=""><br />
+                            <a href="https://tngatuvai.github.io/Psychic-Game/" target="_blank" class="btn btn-info">See
+                                website</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card card-block" id="cardbackground">
+                            <h3 class="card-title">Crystal Game</h3>
+                            <p class="card-text">In this assignment, you'll create another fun and interactive game for
+                                web
+                                browsers. This time, your app must dynamically update your HTML pages with the jQuery
+                                library.</p>
+                            <img src="assets/images/Crystal Game.png" class="img-fluid" alt=""><br />
+                            <a href="https://tngatuvai.github.io/unit-4-game/" target="_blank" class="btn btn-info">See
+                                website</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card card-block" id="cardbackground">
+                            <h3 class="card-title">Trivia Game</h3>
+                            <p class="card-text">In this assignment, You'll create a Trivia game using JavaScript for
+                                the
+                                logic and jQuery to manipulate HTML.</p>
+                            <img src="assets/images/Trivia Game.png" class="img-fluid" alt=""><br />
+                            <a href=" https://tngatuvai.github.io/TriviaGame/" target="_blank" class="btn btn-info">See
+                                website</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card card-block" id="cardbackground">
+                            <h3 class="card-title">Gif Tastic</h3>
+                            <p class="card-text">In this assignment, you'll create another fun and interactive game for
+                                web
+                                browsers. This time, your app must dynamically update your HTML pages with the jQuery
+                                library.</p>
+                            <img src="assets/images/Gif Tastic.png" class="img-fluid" alt=""><br />
+                            <a href="https://tngatuvai.github.io/GifTastic/" target="_blank" class="btn btn-info">See
+                                website</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card card-block" id="cardbackground">
+                            <h3 class="card-title">Train Scheduler</h3>
+                            <p class="card-text">In this assignment, you'll create a train schedule application that
+                                incorporates Firebase to host arrival and departure data. Your app will retrieve and
+                                manipulate this information with Moment.js. This website will provide up-to-date
+                                information
+                                about various trains, namely their arrival times and how many minutes remain until they
+                                arrive at their station.</p>
+                            <img src="assets/images/Train scheduler.png" class="img-fluid" alt=""><br />
+                            <a href="https://tngatuvai.github.io/Train-Scheduler/" target="_blank"
+                                class="btn btn-info">See
+                                website</a>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card card-block" id="cardbackground">
+                            <h3 class="card-title">Project 1</h3>
+                            <p class="card-text">With your team, you will conceive and execute a design that solves a
+                                real-world problem by integrating data received from multiple server-side API requests.
+                                Because you will be working collaboratively, you will learn agile development
+                                methodologies
+                                and implement feature and bug fixes using the git branch workflow and pull requests.</p>
+                            <img src="assets/images/Project 1.png" class="img-fluid" alt=""><br />
+                            <a href="https://github.com/Sharkbearagator/game-search-site" target="_blank"
+                                class="btn btn-info">See website</a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+        </section>
+        <br>
+        <!-- Contact Section -->
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2>Contact Me</h2>
+                        <br>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                        <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                        <div class="list-group" id="notes">
+                            <a class="list-group-item" href="mailto:mugurel.budara@gmail.com" target="_blank"><i
+                                    class="fa fa-envelope fa-lg" aria-hidden="true"></i>&nbsp; tngatuvai85@gmail.com</a>
+                            <a class="list-group-item" href="https://www.facebook.com/tngatuvai" target="_blank"><i
+                                    class="fa fa-facebook-square fa-lg" aria-hidden="true"></i>&nbsp; facebook
+                                profile</a>
+                            <a class="list-group-item" href="https://www.linkedin.com/in/tali-ngatuvai-6509773b/"
+                                target="_blank"><i class="fa fa-linkedin-square fa-lg" aria-hidden="true"></i>&nbsp;
+                                linkedin profile</a>
+                            <a class="list-group-item" href="img" download="Tali Ngatuvai"><i
+                                    class="fa fa-download fa-lg" aria-hidden="true"></i></i>&nbsp; download resume</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <!-- Footer -->
+        <footer class="text-center">
+            <div class="footer-above">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col col-md-6">
+                            <h3>Location</h3>
+                            <p>Orem, UT</p>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-            <div class=" items item2">
-                <a href="http://" class="subItem subItem2">Contact</a> 
-            </div>
+            <footer id="footer">
+                <div class="inner">
+                    <ul class="copyright">
+                        <li1>© Copyright Tali Ngatuvai @ 2019</li>
+                    </ul>
+                </div>
+            </footer>
+            <br>
 
-            <div class="item3">
-              <a href="http://" class="subItem-C"></a>
-            </div>
-
-            <div class="items item4">
-                <a href="http://" class=" subItem subItem4">Projects</a> 
-            </div>
-
-            <div class="items item5">
-                <a href="http://" class="subItem subItem5">Social</a> 
-            </div>
-
-        </div>
     </div>
 
 
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>
