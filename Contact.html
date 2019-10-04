@@ -1,88 +1,65 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-us">
 
 <head>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Tali Ngatuvai</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-light bg-light">
-    <a class="navbar-brand px-5 py-4" href="#">Tali Ngatuvai</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="index.html">About |<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">Portfolio |</a>
-            </li>
-              <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-    </div>
-  </nav>
-  <div class="container">
-    <div class="row">
-      
+  <header>
+    <div class="wrapper">
+      <a href="#" id="logo">Tali Ngatuvai</a>
 
-
-      </div>
-      <div class="col-md-4">
-          
-      </div>
-      <div class="col-md-4">
-      </div>
-    </div>
-  </div>
-  <header id="masthead">
-    <div class="container">
-      <a href="index.html" id="logo"></a>
-
+      <nav>
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <div id="main-container" class="container">
-      <div class="card my-4">
-          <div class="card-body">
-                <h1 class="card-title ml-4 pl-4 pt-4">Contact</h1>
-                <hr>
-                <form>
-                        <div class="form-group mx-5">
-                          <label for="formGroupExampleInput">Example label</label>
-                          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
-                        </div>
-                        <div class="form-group mx-5">
-                          <label for="formGroupExampleInput2">Another label</label>
-                          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                        </div>
-                        <div class="form-group mx-5">
-                                <label for="exampleFormControlTextarea1">Example textarea</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="15"></textarea>
-                              </div>
-                </form>
-                
-      
-          </div>
-       </div>
+  <div id="container" class="wrapper">
+    <div id="content" class="module">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </div>
+
+    <div id="social" class="module">
+      <h2>Connect with Me</h2>
+
+      <a href="https://github.com/TNgatuvai"><img src="./assets/images/GitHub.png"></a>
+      <a href="https://www.linkedin.com/in/tali-ngatuvai-6509773b/"><img src="./assets/images/LinkedIn.png"></a>
+      <a href="https://stackoverflow.com/users/11435731/tali-ngatuvai?tab=profile"><img
+          src="./assets/images/stackoverflow.png"></a>
+    </div>
   </div>
+  <footer> &copy; Copyright 2019 Tali Ngatuvai</footer>
 
-  </div>
-
-  <footer>
-
-  </footer>
 </body>
-<div class="card"> 
-    <div class="card text-center">
-    <div class="card-footer bg-secondary">
-      <h6 id="copy">Copyright @</h6>
 
-</div>
 </html>
